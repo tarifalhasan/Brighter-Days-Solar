@@ -50,11 +50,11 @@ const Blog = () => {
                   />
                 </div>
                 <div className="px-5 space-y-2 w-full  md:w-1/2 bg-white py-6">
-                  <span className="text-base text-primary opacity-60">
+                  <span className="text-base text-dark font-medium opacity-60">
                     {data.date}
                   </span>
                   <h2 className="text-lg">{data.title}</h2>
-                  <button className="text-base flex items-center gap-3  text-primary">
+                  <button className="text-base flex items-center font-medium opacity-90 gap-3  text-primary">
                     <span>Read More</span>
                     <svg
                       width="25"

@@ -54,7 +54,7 @@ const Footer = () => {
             any questions you may have
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row  relative   justify-between items-center">
+        <div className="flex flex-col lg:flex-row  relative  gap-4  justify-between items-center">
           <div className="w-full lg:w-1/2  grid gap-7 lg:grid-cols-2 py-5">
             <ul className="block border-r-2 border-slate-400/10 ">
               <li className="text-base text-dark">01656 667 345</li>

@@ -38,10 +38,14 @@ const AboutUs = () => {
         <div className="grid pt-6 gap-4 lg:grid-rows-1 lg:grid-cols-3">
           {Gallery.map((data, i) => (
             <div key={i} className=" relative">
-              <Image src={data} className="w-full h-full" alt="tarif" />
+              <Image
+                src={data}
+                className="w-full relative z-30 h-full"
+                alt="tarif"
+              />
 
               {i === 2 && (
-                <div className=" absolute  top-[100%] right-0">
+                <div className=" absolute z-10  top-[99%] right-0">
                   <svg
                     width="300"
                     height="16"

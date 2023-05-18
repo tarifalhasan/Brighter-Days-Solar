@@ -91,11 +91,12 @@ const OurProcess = () => {
             ))}
           </div>
 
-          <div className=" absolute right-0 top-[10%]">
+          <div className=" absolute right-0 top-[1%] lg:top-[10%]">
             <svg
               width="54"
               height="55"
               viewBox="0 0 54 55"
+              className="w-[50%] lg:w-full"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >

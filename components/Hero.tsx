@@ -7,7 +7,7 @@ import MobileMenu from './navbar/MobileNavbar';
 const Hero = () => {
   return (
     <section className="hero-section  lg:h-full lg:max-h-[590px] 2xl:max-h-[740px]  overflow-hidden relative  ">
-      <div className=" hidden lg:block absolute lg:top-[22%] 2xl:top-[20%] lg:left-[2%] 2xl:left-[18%]">
+      <div className=" hidden lg:block absolute lg:top-[22%]  2xl:top-[20%] lg:left-0 xl:left-[2%] 2xl:left-[18%]">
         <svg
           width="32"
           height="33"

@@ -45,12 +45,12 @@ const MobileMenu: React.FC = () => {
     <div className={` lg:hidden  2xl:px-0 px-4 pt-6 w-full h-full   `}>
       <div className="logo  flex  justify-between">
         <div className="flex items-center">
-          <Image src={logo} className=" w-[80%]" alt="" />
+          <Image src={logo} className=" w-[70%]" alt="" />
         </div>
         <FiMenu
           onClick={() => openNavbar()}
           className="text-white "
-          size={36}
+          size={40}
         />
       </div>
       <div
