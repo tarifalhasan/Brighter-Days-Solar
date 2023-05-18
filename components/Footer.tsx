@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from './Container';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -53,9 +54,9 @@ const Footer = () => {
             any questions you may have
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row  relative before:absolute before:h-[80%] before:w-[1px] before:bg-slate-400/20 before:inset-0  before:left-[23%] before:top-[10%]   justify-between items-center">
+        <div className="flex flex-col lg:flex-row  relative   justify-between items-center">
           <div className="w-full lg:w-1/2  grid gap-7 lg:grid-cols-2 py-5">
-            <ul className="block border-r-2 border-white border-opacity-70">
+            <ul className="block border-r-2 border-slate-400/10 ">
               <li className="text-base text-dark">01656 667 345</li>
               <li className="text-base text-dark">
                 info@brighterdayssolar.co.uk
@@ -72,11 +73,21 @@ const Footer = () => {
           </div>
           <div className="w-full  lg:w-1/2">
             <ul className=" hidden lg:flex items-center  justify-end gap-5">
-              <li className="text-base text-dark">Home</li>
-              <li className="text-base text-dark">About</li>
-              <li className="text-base text-dark">Privacy Policy</li>
-              <li className="text-base text-dark">Terms of use</li>
-              <li className="text-base text-dark">Blog</li>
+              <li className="text-base text-dark">
+                <Link href={'/'}>Home</Link>
+              </li>
+              <li className="text-base text-dark">
+                <Link href={'#about'}>About</Link>
+              </li>
+              <li className="text-base text-dark">
+                <Link href={'/'}>Privacy Policy</Link>
+              </li>
+              <li className="text-base text-dark">
+                <Link href={'/'}>Terms of use</Link>
+              </li>
+              <li className="text-base text-dark">
+                <Link href={'/'}>Blog</Link>
+              </li>
             </ul>
             <h3 className="text-base text-center lg:text-right opacity-50 text-dark">
               Copyright © 2023 Brighter Days Solar LTD. All rights reserved.
