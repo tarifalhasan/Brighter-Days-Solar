@@ -5,7 +5,7 @@ import heroImg from '../images/hero.png';
 import Image from 'next/image';
 const Hero = () => {
   return (
-    <section className="hero-section relative  overflow-hidden">
+    <section className="hero-section lg:h-full lg:max-h-[660px] 2xl:max-h-[814px]  overflow-hidden relative  ">
       <Container height="">
         <Navbar />
 
@@ -36,9 +36,13 @@ const Hero = () => {
           </div>
         </div>
       </Container>
-      {/* <div className=" absolute right-0 top-0">
-        <Image src={heroImg} alt="bright_days_hero" />
-      </div> */}
+      <div className=" hidden lg:block absolute right-0 xl:top-[12%] 2xl:top-0">
+        <Image
+          className="lg:max-w-[70%] 2xl:max-w-full ml-auto"
+          src={heroImg}
+          alt="bright_days_hero"
+        />
+      </div>
     </section>
   );
 };

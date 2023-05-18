@@ -85,7 +85,7 @@ const Solution = () => {
           </div>
         </div>
       </Container>
-      <div className="absolute left-[95%] 2xl:left-[82%] top-[10%]">
+      <div className=" hidden lg:block absolute left-[95%] 2xl:left-[82%] top-[10%]">
         <svg
           width="32"
           height="32"

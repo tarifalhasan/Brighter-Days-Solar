@@ -5,7 +5,7 @@ import image from '../images/sustainbility.png';
 const Sustainability = () => {
   return (
     <Container height="auto py-10 md:py-16">
-      <div className="flex  gap-24 items-center justify-between ">
+      <div className="flex flex-col lg:flex-row gap-3  lg:gap-24 items-center justify-between ">
         <div>
           <span className="section-title text-black  opacity-75">
             COMMITED to Sustainability
@@ -18,6 +18,7 @@ const Sustainability = () => {
           <svg
             width="380"
             height="86"
+            className="max-w-[80%] lg:max-w-full"
             viewBox="0 0 480 86"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
