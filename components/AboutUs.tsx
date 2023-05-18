@@ -37,8 +37,35 @@ const AboutUs = () => {
         </p>
         <div className="grid pt-6 gap-4 lg:grid-rows-1 lg:grid-cols-3">
           {Gallery.map((data, i) => (
-            <div key={i}>
+            <div key={i} className=" relative">
               <Image src={data} className="w-full h-full" alt="tarif" />
+
+              {i === 2 && (
+                <div className=" absolute  top-[100%] right-0">
+                  <svg
+                    width="300"
+                    height="16"
+                    viewBox="0 0 340 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 7.83846e-05L340 8.2293e-05L340 15.9993L-6.99351e-07 15.9993L0 7.83846e-05Z"
+                      fill="#3A6451"
+                      fill-opacity="0.4"
+                    />
+                    <path
+                      d="M49.1334 -1.27142e-05L340 8.2293e-05L340 15.9993L49.1334 15.9992L49.1334 -1.27142e-05Z"
+                      fill="#3A6451"
+                    />
+                    <path
+                      d="M48.9706 0.0257144L259.794 0.0257168L259.794 16L48.9706 16L48.9706 0.0257144Z"
+                      fill="white"
+                      fill-opacity="0.3"
+                    />
+                  </svg>
+                </div>
+              )}
             </div>
           ))}
         </div>

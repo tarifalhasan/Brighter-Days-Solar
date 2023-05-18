@@ -3,18 +3,47 @@ import Navbar from './navbar/Navbar';
 import Container from './Container';
 import heroImg from '../images/hero.png';
 import Image from 'next/image';
+import MobileMenu from './navbar/MobileNavbar';
 const Hero = () => {
   return (
-    <section className="hero-section lg:h-full lg:max-h-[660px] 2xl:max-h-[814px]  overflow-hidden relative  ">
+    <section className="hero-section  lg:h-full lg:max-h-[590px] 2xl:max-h-[740px]  overflow-hidden relative  ">
+      <div className=" hidden lg:block absolute lg:top-[22%] 2xl:top-[20%] lg:left-[2%] 2xl:left-[18%]">
+        <svg
+          width="32"
+          height="33"
+          viewBox="0 0 32 33"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="16"
+            y="16"
+            width="16"
+            height="16"
+            transform="rotate(-90 16 16)"
+            fill="white"
+            fill-opacity="0.06"
+          />
+          <rect
+            y="33"
+            width="17"
+            height="16"
+            transform="rotate(-90 0 33)"
+            fill="white"
+            fill-opacity="0.25"
+          />
+        </svg>
+      </div>
       <Container height="">
         <Navbar />
+        <MobileMenu />
 
         <div className="grid   place-items-center grid-cols-12">
-          <div className=" col-span-12 lg:col-span-9 xl:col-span-7 pt-10 pb-24 space-y-5">
+          <div className=" col-span-12 lg:col-span-9 xl:col-span-7 pt-10 2xl:pt-16 pb-24 space-y-5">
             <h2 className=" text-4xl text-left md:text-2xl text-white">
               Solar installation & maintenance in Bridgend, Wales
             </h2>
-            <p className="text-base text-white opacity-80">
+            <p className="text-base w-full lg:max-w-[80%] text-white opacity-80">
               We use the latest technology & equipment to design and install
               solar panel systems that meet your specific energy needs.
             </p>
@@ -36,7 +65,7 @@ const Hero = () => {
           </div>
         </div>
       </Container>
-      <div className=" hidden lg:block absolute right-0 xl:top-[12%] 2xl:top-0">
+      <div className=" hidden lg:block absolute right-0 xl:top-[19%] 2xl:top-[12%]">
         <Image
           className="lg:max-w-[70%] 2xl:max-w-full ml-auto"
           src={heroImg}

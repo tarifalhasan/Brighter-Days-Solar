@@ -12,7 +12,7 @@ const TotalServices = () => {
     {
       title: 'Rural Solar Panels Installation ',
       heading: `
-       <h2 class="text-lg md:text-[36px] leading-[50px] font-normal text-dark">
+       <h2 class="text-lg md:text-[36px]  lg:leading-[50px] font-normal text-dark">
        High-quality solar installations <span class="text-[#3A6451]">for homes</span> in Bridgend and the surrounding areas
        </h2>
       `,
@@ -22,7 +22,7 @@ const TotalServices = () => {
     {
       title: 'Commercial Solar Power Systems',
       heading: `
-       <h2 class="text-lg md:text-[36px] leading-[50px] font-normal text-dark">
+       <h2 class="text-lg md:text-[36px]  lg:leading-[50px] font-normal text-dark">
       Solutions <span class="text-[#3A6451]">for businesses</span>  looking to save on energy costs and reduce their carbon footprint
        </h2>
       `,
@@ -32,7 +32,7 @@ const TotalServices = () => {
     {
       title: 'Rural Solar Panels Installation ',
       heading: `
-       <h2 class="text-lg md:text-[36px] leading-[50px] font-normal text-dark">
+       <h2 class="text-lg md:text-[36px]  lg:leading-[50px] font-normal text-dark">
        Specialist solar installation and maintenance for <span class="text-[#3A6451]">rural properties</span>  and businesses
        </h2>
       `,
@@ -42,7 +42,7 @@ const TotalServices = () => {
     {
       title: 'Schools, Colleges & Universities',
       heading: `
-       <h2 class="text-lg md:text-[36px] leading-[50px] font-normal text-dark">
+       <h2 class="text-lg md:text-[36px]  lg:leading-[50px] font-normal text-dark">
        Helping <span class="text-[#3A6451]">educational institutions</span>  reduce their contribute to a greener environment
        </h2>
       `,

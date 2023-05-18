@@ -38,7 +38,7 @@ const OurProcess = () => {
     {
       title: 'solar panel maintenance',
       heading: `
-       <h2 class="text-lg md:text-[36px] leading-[50px] font-normal text-dark">
+       <h2 class="text-lg md:text-[36px]  lg:leading-[50px] font-normal text-dark">
        Maintain, <span class=" text-primary">Repair</span> & Cleaning
        </h2>
       `,
@@ -48,7 +48,7 @@ const OurProcess = () => {
     {
       title: 'Commercial Solar Power Systems',
       heading: `
-       <h2 class="text-lg md:text-[36px] leading-[50px] font-normal text-dark">
+       <h2 class="text-lg md:text-[36px] lg:leading-[50px] font-normal text-dark">
       Solutions <span class="text-[#3A6451]">for businesses</span>  looking to save on energy costs and reduce their carbon footprint
        </h2>
       `,
@@ -60,11 +60,11 @@ const OurProcess = () => {
     <div className=" bg-primary">
       <Container height="auto">
         <div className=" py-10 relative md:py-16">
-          <div className=" space-y-6">
+          <div className=" space-y-2">
             <span className="section-title text-white opacity-75">
               Our Process
             </span>
-            <h2 className=" text-lg md:text-xl text-white">
+            <h2 className=" text-lg lg:max-w-[90%] md:text-xl text-white">
               We take a custom approach to designing and installing solar energy
               systems
             </h2>
@@ -79,7 +79,10 @@ const OurProcess = () => {
 
           <div className="grid pt-8 md:grid-cols-2 gap-5 grid-rows-6 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
             {Data.map((data, i) => (
-              <div key={i} className="px-5 py-3 rounded-md bg-white">
+              <div
+                key={i}
+                className="px-5 relative py-3 rounded-md bg-white border-b-2 border-gray-200" // Added border-b-2 and border-gray-200 classes
+              >
                 <h4 className="text-[18px]">{data.title}</h4>
                 <p className="text-base text-[#232536] py-1 opacity-60">
                   {data.heading}
@@ -87,6 +90,7 @@ const OurProcess = () => {
               </div>
             ))}
           </div>
+
           <div className=" absolute right-0 top-[10%]">
             <svg
               width="54"

@@ -15,6 +15,8 @@ module.exports = {
       colors: {
         primary: 'var(--primary)',
         dark: 'var(--dark)',
+        lightGray: '#F9F9FF',
+        ligthBorder: 'gba(0, 0, 0, 0.08)',
       },
       fontSize: {
         '2xl': [
@@ -26,9 +28,9 @@ module.exports = {
           },
         ],
         xl: [
-          '44px',
+          '40px',
           {
-            lineHeight: '60px',
+            lineHeight: '50px',
             letterSpacing: '-0.01em',
             fontWeight: '400',
           },

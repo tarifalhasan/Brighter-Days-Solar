@@ -29,12 +29,16 @@ body {
     background-color: #3a6451; */
   }
   .btn-white {
-    @apply bg-white px-4 py-2.5  text-[#3A6451] rounded-md;
+    @apply bg-white px-4 min-h-[59px] font-medium text-opacity-80 text-[#3A6451] rounded-md;
   }
   .btn-green {
-    @apply bg-[#3A6451] px-4 py-2.5  text-[#ffffff] rounded-md;
+    @apply bg-[#3A6451] px-4 min-h-[59px]  text-[#ffffff] rounded-md;
   }
   .section-title {
-    @apply text-base text-[#232536] tracking-[3px];
+    @apply text-sm md:text-base text-[#232536] opacity-[0.75] tracking-[3px];
   }
+}
+.mobile_navbar {
+  transform: translateX(0px) !important;
+  transition: 0.5s all ease !important;
 }

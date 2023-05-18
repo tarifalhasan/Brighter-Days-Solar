@@ -18,16 +18,25 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-[#F9F9FF]">
+    <div className=" bg-lightGray relative">
+      <div className=" absolute top-[20%] left-[95%] 2xl:left-[82%]">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="16" y="16" width="16" height="16" fill="#3A6451" />
+          <rect width="16" height="16" fill="#3A6451" fill-opacity="0.5" />
+        </svg>
+      </div>
       <Container height="auto">
         <div className="py-16">
           <div>
-            <span className="section-title text-black  opacity-75">
-              Our Process
-            </span>
+            <span className="section-title text-black  opacity-75">Blog</span>
             <h2 className=" text-lg md:text-xl text-dark">
-              We take a custom approach to designing and installing solar energy
-              systems
+              Read our latest <span className=" text-primary">articles</span>
             </h2>
           </div>
           <div className="grid gap-6 pt-10 lg:grid-cols-2">

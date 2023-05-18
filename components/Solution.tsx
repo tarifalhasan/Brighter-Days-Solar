@@ -5,7 +5,7 @@ const Solution = () => {
   return (
     <div className="bg-[#F9F9FF] py-10 relative lg:py-16">
       <Container height="auto">
-        <div className="flex gap-x-10 flex-col gap-y-16 lg:flex-row">
+        <div className="flex gap-x-20 flex-col gap-y-16 lg:flex-row">
           <div className="basis-[55%]">
             <span className="section-title">RENEWABLE SOLUTIONS</span>
             <h2 className="  text-lg md:text-xl text-dark">
